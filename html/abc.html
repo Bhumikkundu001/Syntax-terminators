@@ -1,0 +1,104 @@
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Password Manager</title>
+
+<style>
+
+    body {
+
+        font-family: Arial, sans-serif;
+
+        background-color: #f4f4f4;
+
+        margin: 0;
+
+        padding: 20px;
+
+    }
+
+    h1 {
+
+        text-align: center;
+
+    }
+
+    .container {
+
+        max-width: 600px;
+
+        margin: auto;
+
+        background: white;
+
+        padding: 20px;
+
+        border-radius: 8px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    form {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    input, button {
+
+        margin: 10px 0;
+
+        padding: 10px;
+
+        font-size: 16px;
+
+    }
+
+    table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin-top: 20px;
+
+    }
+
+    th, td {
+
+        border: 1px solid #ddd;
+
+        padding: 8px;
+
+        text-align: left;
+
+    }
+
+    th {
+
+        background-color: #f2f2f2;
+
+    }
+
+</style>
+Copy
+<h1>Password Manager</h1>
+
+<form id="passwordForm">
+
+    <input type="text" id="site" placeholder="Website" required>
+
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Add Password</button>
+    </form>
+
+    <h2>Saved Passwords</h2>
+    <table id="passwordTable">
+        <thead>
+            <tr>
+                <th>Website</th>
